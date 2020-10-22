@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  color: #9698a6;
+  background-color: #fafafa;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #2d314d;
+  margin-top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 10em;
+  background-color: white;
+  border: 1px solid darkcyan;
+  z-index: 10;
+}
+
+.menu a {
+  color: #9698a6;
+  text-decoration: none;
+  padding: 1.5em 1em;
+}
+.menu a:hover {
+  border-bottom: 3px solid #31d35c;
+}
+
+.btn {
+  padding: 0.875rem 2.1875rem;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn-green {
+  color: white;
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  border: 2px dotted orange;
+}
+.hero .intro {
+  margin-left: 10em;
+  text-align: left;
+}
+.hero .intro h1 {
+  font-size: 3.25rem;
+}
+.hero .intro p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.hero .illustration {
+  z-index: -2;
+  background-image: url("images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  margin-top: -14.5em;
+}
+.hero .illustration img {
+  margin: 7em -7.5em 0 10em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 8em 5em 10em;
+  background-color: #f3f4f6;
+  border: 2px dotted darkcyan;
+}
+.content > p {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  width: 60%;
+}
+
+.features {
+  display: flex;
+  margin-top: 1.5em;
+}
+.features .feature {
+  display: inherit;
+  flex: 1;
+  flex-direction: column;
+  width: 50%;
+}
+.features .feature img {
+  align-self: flex-start;
+  margin-bottom: 2em;
+}
+.features .feature p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+.feature:not(:last-child) {
+  margin-right: 1.5em;
+}
+
+.article-container {
+  display: flex;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 8em 5em 10em;
+  border: 2px dotted fuchsia;
+}
+
+.article-card {
+  display: inherit;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid orange;
+  width: 24.5%;
+}
+.article-card img {
+  height: 12em;
+}
+.article-card .article-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.article-card .article-content .author {
+  margin: 1em 0;
+  font-size: 0.8rem;
+}
+.article-card .article-content h4 {
+  margin-bottom: 0;
+}
+.article-card .article-content p {
+  font-size: 0.8em;
+}
+
+.article-card:not(:last-child) {
+  margin-right: 1em;
+}

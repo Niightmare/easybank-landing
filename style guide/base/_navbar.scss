@@ -1,0 +1,23 @@
+@import "../lib/utils";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 10em;
+  background-color: $White;
+  border: 1px solid darkcyan;
+  z-index: 10;
+}
+
+.menu {
+    // border: 1px solid red;
+    a {
+        color: $Grayish-Blue;
+        text-decoration: none;
+        padding: 1.5em 1em;
+        &:hover {
+            border-bottom: 3px solid $Lime-Green;
+        }
+    }
+}

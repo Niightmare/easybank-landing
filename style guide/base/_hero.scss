@@ -1,0 +1,32 @@
+@import "../lib/utils";
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  border: 2px dotted orange;
+  .intro {
+    margin-left: 10em;
+    text-align: left;
+    // border: 1px solid red;
+    h1 {
+      font-size: 3.25rem;
+    }
+    p {
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .illustration {
+    z-index: -2;
+    // border: 1px solid darkcyan;
+    background-image: url("images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    margin-top: -14.5em;
+    img {
+      // border: 1px solid fuchsia;
+      margin: 7em -7.5em 0 10em;
+    }
+  }
+}

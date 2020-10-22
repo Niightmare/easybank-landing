@@ -1,0 +1,15 @@
+@import "../lib/utils";
+
+.btn {
+//   height: 3em;
+//   width: 9rem;
+padding: 0.875rem 2.1875rem;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn-green {
+  color: $White;
+  background-image: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+  //   background-image: linear-gradient(90deg, #31d35c, #2bb7da);
+}

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+@import "../lib/utils";
+
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+  // height: 100vh;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $Grayish-Blue;
+  background-color: $Very-Light-Gray;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+  //   font-size: 2.31rem;
+  line-height: 1.15;
+  color: #2d314d;
+  margin-top: 0;
+}
