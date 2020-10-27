@@ -1,0 +1,55 @@
+@import "../lib/utils";
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: $Dark-Blue;
+  padding: 2em 6em 2em 10em;
+  color: $White;
+  border: 2px dotted orange;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid fuchsia;
+    .footer-col {
+      text-align: start;
+      padding-right: 5em;
+    //   border: 1px solid cyan;
+    }
+  }
+  .footer-col:not(:last-child) {
+    border-right: 2em;
+  }
+  .logo-footer {
+    filter: brightness(0) invert(1);
+  }
+  .socials {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5em;
+    .social-icon {
+      font-size: 1.3em;
+      border: 1px dotted yellow;
+    }
+    .social-icon:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+  .footer-col {
+    text-align: end;
+    .copyright {
+      margin-top: 2em;
+      color: $Grayish-Blue;
+    }
+    // border: 1px solid red;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
