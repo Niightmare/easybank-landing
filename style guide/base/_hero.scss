@@ -1,32 +1,42 @@
 @import "../lib/utils";
 
 .hero {
+  // border: 2px dotted orange;
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  border: 2px dotted orange;
-  .intro {
-    margin-left: 10em;
-    text-align: left;
-    // border: 1px solid red;
-    h1 {
-      font-size: 3.25rem;
-    }
-    p {
-      line-height: 1.5;
-      margin-bottom: 2rem;
+  flex-direction: column;
+  padding-bottom: 2em;
+  .hero_image {
+    position: relative;
+    background-image: url("images/bg-intro-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 18.4rem;
+    // border: 1px solid darkcyan;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url("images/image-mockups.png");
+      background-size: 93%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
     }
   }
-
-  .illustration {
-    z-index: -2;
-    // border: 1px solid darkcyan;
-    background-image: url("images/bg-intro-desktop.svg");
-    background-repeat: no-repeat;
-    margin-top: -14.5em;
-    img {
-      // border: 1px solid fuchsia;
-      margin: 7em -7.5em 0 10em;
+  .intro {
+    text-align: center;
+    padding: 1.5em;
+    // border: 1px solid red;
+    h1 {
+      font-size: 2rem;
+      // border: 1px solid violet;
+    }
+    p {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      margin: 0 0 1.5rem 0;
+      // border: 1px solid lawngreen;
     }
   }
 }
