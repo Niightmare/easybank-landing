@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 18.4rem;
+    z-index: -2;
     // border: 1px solid darkcyan;
     &::after {
       content: "";

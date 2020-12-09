@@ -35,6 +35,9 @@ footer {
     .social-icon {
       font-size: 1.3em;
       // border: 1px dotted yellow;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .social-icon:not(:last-child) {
       margin-right: 1em;
@@ -59,6 +62,5 @@ ul {
   // border: 1px solid red;
   li:not(:last-child) {
     margin-bottom: 0.5em;
-
   }
 }

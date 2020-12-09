@@ -18,7 +18,7 @@
     a {
       color: $Grayish-Blue;
       text-decoration: none;
-      padding: 1.5em 1em;
+      padding: 1.1em 1em;
       &:hover {
         border-bottom: 3px solid $Lime-Green;
       }
@@ -159,6 +159,12 @@
   ul {
     li:not(:last-child) {
       margin-bottom: 1em;
+    }
+    li {
+      &:hover {
+        cursor: pointer;
+        color: $Lime-Green;
+      }
     }
   }
 }
